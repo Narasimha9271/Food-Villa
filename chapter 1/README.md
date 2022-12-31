@@ -88,8 +88,26 @@
          Without the crossorigin attribute, the browser might block the script from being loaded or used by a page that is served from a different domain.
             This is because the default CORS policy for scripts is "same-origin", which means that the script can only be used by pages that are served 
             from the same domain as the script.
-         
-         
  
+ ---
  
+ # Difference between React abd ReactDOM?
+        React is a JavaScript library for building user interfaces. It is primarily used for building single-page applications (SPAs) and mobile                        applications, and it allows developers to create reusable UI components.
+
+       ReactDOM is a separate library that is used to render React components on the DOM (Document Object Model). It provides a way to take a React component           and place it in the DOM, which is the structure of objects that represents the HTML document as a tree.
+
+     In general, React is used to build the structure and logic of a user interface, while ReactDOM is used to render that interface in the browser. They are          both part of the React ecosystem, but they serve different purposes.
+         
+ ---
+ 
+ # Difference between react.development.js and react.production.js files via CDN
+      React is a JavaScript library for building user interfaces, and it is available as a package on npm (the package manager for JavaScript). There are two          versions of the React package that are typically used in web development: development and production.
+     The development version of React (react.development.js) is optimized for debugging and includes helpful error messages and additional warning checks. It          is intended to be used during the development and testing of an application.
+     The production version of React (react.production.js) is optimized for performance and is minified, which means that it has been compressed to reduce            its file size. It is intended to be used in the final, deployed version of an application.
+     Both versions of React can be included in an HTML document using a CDN (Content Delivery Network), which is a network of servers that deliver web                content to users based on their geographic location. To include React in an HTML document using a CDN, you can use a script tag with the URL of the          React library, like this:
+    <script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react@16.13.1/umd/react.production.min.js"></script>
+    It's generally recommended to use the production version of React in a deployed application, because it is faster and smaller than the development v             version. However, during development and testing, it can be helpful to use the development version to get more detailed error messages and warning checks.
+
+
     
