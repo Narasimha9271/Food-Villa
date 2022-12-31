@@ -91,23 +91,50 @@
  
  ---
  
- # Difference between React abd ReactDOM?
-        React is a JavaScript library for building user interfaces. It is primarily used for building single-page applications (SPAs) and mobile                        applications, and it allows developers to create reusable UI components.
+ # Difference between React and ReactDOM?
+        React is a JavaScript library for building user interfaces. It is primarily used for building single-page applications (SPAs) and mobile            
+             applications, and it allows developers to create reusable UI components.
 
-       ReactDOM is a separate library that is used to render React components on the DOM (Document Object Model). It provides a way to take a React component           and place it in the DOM, which is the structure of objects that represents the HTML document as a tree.
+       ReactDOM is a separate library that is used to render React components on the DOM (Document Object Model). It provides a way to take a React componen 
+             and place it in the DOM, which is the structure of objects that represents the HTML document as a tree.
 
-     In general, React is used to build the structure and logic of a user interface, while ReactDOM is used to render that interface in the browser. They are          both part of the React ecosystem, but they serve different purposes.
-         
+       In general, React is used to build the structure and logic of a user interface, while ReactDOM is used to render that interface in the browser. The
+            are both part of the React ecosystem, but they serve different purposes.    
  ---
  
  # Difference between react.development.js and react.production.js files via CDN
-      React is a JavaScript library for building user interfaces, and it is available as a package on npm (the package manager for JavaScript). There are two          versions of the React package that are typically used in web development: development and production.
-     The development version of React (react.development.js) is optimized for debugging and includes helpful error messages and additional warning checks. It          is intended to be used during the development and testing of an application.
-     The production version of React (react.production.js) is optimized for performance and is minified, which means that it has been compressed to reduce            its file size. It is intended to be used in the final, deployed version of an application.
-     Both versions of React can be included in an HTML document using a CDN (Content Delivery Network), which is a network of servers that deliver web                content to users based on their geographic location. To include React in an HTML document using a CDN, you can use a script tag with the URL of the          React library, like this:
+      React is a JavaScript library for building user interfaces, and it is available as a package on npm (the package manager for JavaScript). There are two 
+          versions of the React package that are typically used in web development: development and production.
+     The development version of React (react.development.js) is optimized for debugging and includes helpful error messages and additional warning checks. It 
+          is intended to be used during the development and testing of an application.
+     The production version of React (react.production.js) is optimized for performance and is minified, which means that it has been compressed to reduce   
+          its file size. It is intended to be used in the final, deployed version of an application.
+     Both versions of React can be included in an HTML document using a CDN (Content Delivery Network), which is a network of servers that deliver web       
+          content to users based on their geographic location. To include React in an HTML document using a CDN, you can use a script tag with the URL of the 
+          React library, like this:
     <script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
     <script src="https://unpkg.com/react@16.13.1/umd/react.production.min.js"></script>
-    It's generally recommended to use the production version of React in a deployed application, because it is faster and smaller than the development v             version. However, during development and testing, it can be helpful to use the development version to get more detailed error messages and warning checks.
+    It's generally recommended to use the production version of React in a deployed application, because it is faster and smaller than the development    
+         version. However, during development and testing, it can be helpful to use the development version to get more detailed error messages and warning 
+         checks.
+     
+    ---
+    
+    # What is async and defer? 
+        async and defer are attributes that can be used in the script tag of an HTML document to specify how a script should be loaded and executed.
+
+       The async attribute tells the browser to start downloading the script as soon as possible, but to execute it only after the HTML parser has finished 
+             parsing the document. This means that the script will be executed as soon as it has finished downloading, but it may interrupt the parsing of                the HTML  document.
+
+       The defer attribute tells the browser to start downloading the script as soon as possible, but to execute it only after the HTML parser has finished 
+             parsing the document and all other deferred scripts have finished executing. This means that the script will be executed in the order in which 
+             it appears in the HTML document, after all other content has been parsed and displayed.
+
+       Both async and defer can be used to improve the performance of an HTML document by allowing the browser to load and execute scripts in the background 
+             while the HTML parser continues to work. However, defer is generally considered to be more reliable because it ensures that scripts are executed 
+             in the order in which they appear in the HTML document, while async does not guarantee this.
+
+  ---  
 
 
     
