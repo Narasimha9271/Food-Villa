@@ -120,7 +120,7 @@
      
     ---
     
-    # What is async and defer? 
+    # What is async and defer
         async and defer are attributes that can be used in the script tag of an HTML document to specify how a script should be loaded and executed.
 
        The async attribute tells the browser to start downloading the script as soon as possible, but to execute it only after the HTML parser has finished 
